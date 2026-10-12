@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "hostname": "4tl45-1",
   "os": "Microsoft Windows Server 2025 Datacenter",
   "os_build": "10.0.26100",
@@ -41,10 +41,11 @@
   "akses": {
     "tailscale": {
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "100.124.17.87",
-      "magicdns": "4tl45-1.tail73435b.ts.net.",
-      "hostname": "4TL45-1",
-      "status": "ok"
+      "status": "ok",
+      "ip": "",
+      "magicdns": "",
+      "hostname": "",
+      "funnel_addr": ""
     },
     "mode": "tailscale"
   },
@@ -106,5 +107,6 @@
     "windows_server": true,
     "os": "Microsoft Windows Server 2025 Datacenter"
   },
-  "heartbeat_at": "2026-10-12T15:24:58.5557275Z"
+  "heartbeat_at": "2026-10-12T15:24:58.5557275Z",
+  "stopped_at": "2026-10-12T15:28:24Z"
 }
