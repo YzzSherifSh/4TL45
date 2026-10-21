@@ -1,25 +1,25 @@
 {
   "active": false,
-  "hostname": "4tl45-1",
+  "hostname": "rdpfree-2",
   "os": "Microsoft Windows Server 2025 Datacenter",
   "os_build": "10.0.26100",
   "os_style": "Native Windows",
   "hardware": {
+    "ram_gb": 16.0,
     "cpu_threads": 4,
-    "disk_free_gb": 31.9,
-    "ram_gb": 16.0
+    "disk_free_gb": 28.8
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-12T09:35:24Z",
-  "expires_at": "2026-10-12T15:30:24Z",
+  "started_at": "2026-10-21T23:18:29Z",
+  "expires_at": "2026-10-22T05:13:29Z",
   "duration_menit": 355,
-  "run_id": "38230829055",
+  "run_id": "39692527275",
   "run_attempt": "1",
-  "run_number": "1",
-  "run_url": "https://github.com/shadoexswalow/4TL45/actions/runs/38230829055",
+  "run_number": "2",
+  "run_url": "https://github.com/shadoexswalow/4TL45/actions/runs/39692527275",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -39,74 +39,15 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
+    "mode": "tailscale",
     "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "status": "ok",
+      "note": "Tailscale menolak koneksi. Periksa masa berlaku auth key dan persetujuan perangkat di tailnet.",
+      "status": "failed",
       "ip": "",
       "magicdns": "",
       "hostname": "",
       "funnel_addr": ""
-    },
-    "mode": "tailscale"
-  },
-  "media": {
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "audio_output": "rdp_playback_enabled",
-    "microphone": "disabled",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
-  },
-  "grafis": {
-    "debug": "INFO | DRIVER:     windows_get_device_registry_entry: Device ID(1) Does not contain a value for \"VulkanImplicitLayers\"\r ; INFO | DRIVER:     windows_get_device_registry_entry: Device ID(1) Does not contain a value for \"VulkanExplicitLayers\"\r ; WARNING | LAYER:   windows_read_data_files_in_registry: Registry lookup failed to get layer manifest files.\r ; DRIVER:            Checking for Driver Manifest files in Registry at HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\Drivers\r ; INFO | DRIVER:     windows_get_device_registry_files: opening device VMBUS\\{da0a7802-e377-4aac-8e77-0558eb1073f8}\\{5620e0c7-8062-4dce-aeb7-520c7ef76171}\r ; INFO | DRIVER:     windows_get_device_registry_entry: Device ID(1) Does not contain a value for \"VulkanDriverName\"\r ; INFO | DRIVER:     windows_get_device_registry_files: Opening child device 2 - DISPLAY\\MSH062E\\5&1A097CD8&0&UID5527112\r ; DEBUG | DRIVER:    windows_get_device_registry_files: GUID for 2 is not SoftwareComponent skipping\r ; DRIVER:            windows_get_device_registry_files: found no registry files\r ; INFO | DRIVER:     Located json file \"C:\\XyRDP\\grafis\\vulkan\\lvp_icd.x86_64.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\Drivers\"\r ; INFO | DRIVER:     Driver C:\\XyRDP\\grafis\\vulkan\\lvp_icd.x86_64.json is not recognized as a known driver. It will be assumed to be active\r ; DRIVER:            Found ICD manifest file C:\\XyRDP\\grafis\\vulkan\\lvp_icd.x86_64.json, version 1.0.1\r ; DEBUG | DRIVER:    Searching for ICD drivers named .\\vulkan_lvp.dll\r ; llvmpipe (LLVM 23.1.2, 256 bits)",
-    "mesa": "26.2.4",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]",
-    "mode": "software",
-    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
-    "loader": "sudah ada",
-    "dir": "C:\\XyRDP\\grafis",
-    "vulkan": "INFO | DRIVER:     windows_get_device_registry_entry: Device ID(1) Does not contain a value for \"VulkanImplicitLayers\"\r\nINFO | DRIVER:     windows_get_device_registry_entry: Device ID(1) Does not contain a value for \"VulkanExplicitLayers\"\r\nWARNING | LAYER:   windows_read_data_files_in_registry: Registry lookup failed to get layer manifest files.\r\nDRIVER:            Checking for Driver Manifest files in Registry at HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\Drivers\r\nINFO | DRIVER:     windows_get_device_registry_files: opening device VMBUS\\{da0a7802-e377-4aac-8e77-0558eb1073f8}\\{5620e0c7-8062-4dce-aeb7-520c7ef76171}\r\nINFO | DRIVER:     windows_get_device_registry_entry: Device ID(1) Does not contain a value for \"VulkanDriverName\"\r\nINFO | DRIVER:     windows_get_device_registry_files: Opening child device 2 - DISPLAY\\MSH062E\\5&1A097CD8&0&UID5527112\r\nDEBUG | DRIVER:    windows_get_device_registry_files: GUID for 2 is not SoftwareComponent skipping\r\nDRIVER:            windows_get_device_registry_files: found no registry files\r\nINFO | DRIVER:     Located json file \"C:\\XyRDP\\grafis\\vulkan\\lvp_icd.x86_64.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\Drivers\"\r\nINFO | DRIVER:     Driver C:\\XyRDP\\grafis\\vulkan\\lvp_icd.x86_64.json is not recognized as a known driver. It will be assumed to be active\r\nDRIVER:            Found ICD manifest file C:\\XyRDP\\grafis\\vulkan\\lvp_icd.x86_64.json, version 1.0.1\r\nDEBUG | DRIVER:    Searching for ICD drivers named .\\vulkan_lvp.dll\r\nllvmpipe (LLVM 23.1.2, 256 bits)",
-    "adapters": "Microsoft Hyper-V Video",
-    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa"
-  },
-  "samp": {
-    "directplay": "Enabled",
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "directx": "verified_x86_x64",
-    "netfx3": "Enabled",
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "samp_installed": false,
-    "play_tested": false,
-    "status": "dependencies_ready",
-    "gta_installed": false
-  },
-  "games": {
-    "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "minecraft_java": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "samp": {
-      "gta_installed": false,
-      "status": "dependencies_ready",
-      "game_dir": null,
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-      "samp_installed": false
-    },
-    "roblox": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
     }
   },
-  "game_environment": {
-    "hypervisor_present": true,
-    "play_tested": false,
-    "runner": "windows-2025",
-    "windows_server": true,
-    "os": "Microsoft Windows Server 2025 Datacenter"
-  },
-  "heartbeat_at": "2026-10-12T15:24:58.5557275Z",
-  "stopped_at": "2026-10-12T15:28:24Z"
+  "stopped_at": "2026-10-21T23:18:41Z"
 }
